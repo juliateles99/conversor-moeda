@@ -10,9 +10,9 @@
 - [5) Construindo a Requisição (HttpRequest)](#requisicao)
 - [6) Construindo a Resposta (HttpResponse)](#resposta)
 - [7) Analisando a resposta em formato JSON](#analise-json)
-- [8) ](#)
-- [9) ](#)
-- [10) ](#)
+- [8) Filtrando as moedas](#filtragem)
+- [9) Convertendo os valores](#convertendo)
+- [10) Interagindo com o usuário](#interacao)
 
 
 
@@ -113,3 +113,46 @@ Na sexta fase do nosso desafio, focamo-nos no uso da interface HttpResponse para
 Na sétima fase do nosso desafio, mergulhamos na análise da resposta JSON utilizando a biblioteca Gson em Java. A manipulação de dados JSON é essencial, pois a maioria das respostas das APIs são apresentadas neste formato. Para facilitar a análise dos dados que serão obtidos da API, recomendamos o uso de ferramentas como o Postman.
 
 Com a biblioteca Gson, você pode realizar o mapeamento eficiente dos dados JSON para objetos Java, facilitando assim a extração e manipulação das informações necessárias. Lembre-se de utilizar as classes fornecidas pelo Gson, como JsonParser e JsonObject, para acessar as diferentes propriedades da resposta JSON.
+
+### 8) Filtrando as moedas
+
+Na oitava fase do nosso desafio, concentramo-nos no processo de filtrar as moedas utilizando a biblioteca Gson em Java.
+
+Para acessar dados específicos, como os valores das diferentes moedas, é essencial entender como navegar pela estrutura JSON da resposta da API.
+
+Para o filtro de moedas, será necessário usar o atributo "Currency Code" do JSON. Para o desafio, você poderá escolher pelo MENOS SEIS "Currency Code" para incluir na sua aplicação. Estes códigos são:
+
+ARS - Peso argentino
+
+BOB - Boliviano boliviano
+
+BRL - Real brasileiro
+
+CLP - Peso chileno
+
+COP - Peso colombiano
+
+USD - Dólar americano
+
+
+link: https://www.exchangerate-api.com/docs/supported-currencies
+
+### 9) Convertendo os valores
+
+Na nona fase, finalmente realizaremos as conversões entre as moedas, agora que já temos os valores das taxas de câmbio em mãos.
+
+Dessa forma, o próximo passo é implementar a lógica de conversão utilizando as taxas obtidas para calcular os valores convertidos entre as moedas desejadas.
+
+DICA: Uma sugestão é criar métodos ou funções específicas para realizar esses cálculos, o que tornará o código mais modular e fácil de entender.
+
+Experimente utilizar variáveis para armazenar os valores inseridos pelo usuário, aplicar as taxas de conversão e exibir os resultados finais.
+
+Esta fase representa a culminação do desafio, onde todas as peças se encaixam para oferecer uma experiência completa de conversão de moedas.
+
+### 10) Interagindo com o usuário
+
+Nesta etapa do desafio, vamos nos envolver na interação com o usuário, implementando uma interface textual por meio do console que apresenta opções de conversão de moedas. A estrutura incluirá um menu dentro de um loop de repetição, permitindo que o usuário selecione opções numéricas e forneça dados para a conversão, utilizando a classe Scanner para capturar a entrada do usuário.
+
+No final, o programa exibirá o valor convertido conforme a escolha do usuário. Além disso, é fundamental realizar testes abrangentes para garantir o correto funcionamento do programa, simulando várias situações e fluxos para identificar e corrigir possíveis erros.
+
+Abaixo um exemplo de como poderá estrururar seu menu para interagir com o usuário em seu conversor de moedas. Use-o de inspiração
