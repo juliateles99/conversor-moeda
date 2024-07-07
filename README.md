@@ -6,6 +6,14 @@
 - [1) Configurando o ambiente de trabalho](#configuracao)
 - [2) Conhecendo a API para trazer dados](#api-dados)
 - [3) Importando a biblioteca Gson no IntelliJ](#gson)
+- [4) Construindo o Cliente para solicitações (HttpClient)](#solicitacoes)
+- [5) Construindo a Requisição (HttpRequest)](#requisicao)
+- [6) Construindo a Resposta (HttpResponse)](#resposta)
+- [7) Analisando a resposta em formato JSON](#analise-json)
+- [8) ](#)
+- [9) ](#)
+- [10) ](#)
+
 
 
 ### Sobre o desafio
@@ -87,3 +95,21 @@ Selecione a versão do Gson que deseja utilizar.
 Clique em "OK" para fechar a janela.
 
 Agora, a biblioteca Gson está adicionada ao seu projeto e você pode começar a usá-la importando suas classes nos seus arquivos Java. Por exemplo:
+
+### 4) Construindo o Cliente para solicitações (HttpClient)
+
+Na quarta fase do nosso desafio, utilizamos a classe HttpClient para fazer requisições à API de taxas de câmbio e obter dados essenciais. O uso do HttpClient em Java facilita a conexão e a obtenção de respostas de maneira eficiente. Além disso, fornece uma base sólida para realizar operações HTTP de maneira mais estruturada e versátil. Explorar e entender o manejo dessa classe em Java otimiza o processo de solicitação.
+
+### 5) Construindo a Requisição (HttpRequest)
+
+Na quinta fase do nosso desafio, mergulhamos no uso da classe HttpRequest para configurar e personalizar nossas solicitações à API de taxas de câmbio. A classe HttpRequest em Java nos oferece um controle detalhado sobre os parâmetros de nossas solicitações, sendo essencial para adaptar a consulta às nossas necessidades específicas. Aprender a usar a classe HttpRequest não apenas é crucial para o sucesso do nosso projeto, mas também proporciona uma compreensão mais profunda de como interagir de maneira eficiente com APIs em Java.
+
+### 6) Construindo a Resposta (HttpResponse)
+
+Na sexta fase do nosso desafio, focamo-nos no uso da interface HttpResponse para gerenciar as respostas recebidas da API. A interface HttpResponse em Java oferece uma estrutura que permite acessar e analisar os diferentes elementos de uma resposta HTTP. Ao compreender como trabalhar com esta interface, você será capaz de extrair informações significativas das respostas, como códigos de status, cabeçalhos e o corpo da resposta, que geralmente é apresentado em formato JSON.
+
+### 7) Analisando a resposta em formato JSON
+
+Na sétima fase do nosso desafio, mergulhamos na análise da resposta JSON utilizando a biblioteca Gson em Java. A manipulação de dados JSON é essencial, pois a maioria das respostas das APIs são apresentadas neste formato. Para facilitar a análise dos dados que serão obtidos da API, recomendamos o uso de ferramentas como o Postman.
+
+Com a biblioteca Gson, você pode realizar o mapeamento eficiente dos dados JSON para objetos Java, facilitando assim a extração e manipulação das informações necessárias. Lembre-se de utilizar as classes fornecidas pelo Gson, como JsonParser e JsonObject, para acessar as diferentes propriedades da resposta JSON.
